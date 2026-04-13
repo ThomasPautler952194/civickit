@@ -28,12 +28,12 @@ jobs:
   docker-build:
     needs: test
     # Local reference 
-    uses: ./.github/workflows/docker-build-push.yml
+    uses: ./.github/workflows/dockerfile.yml
 
     with:
       image_name: civickit-backend
-      dockerfile: backend/dockerfile
-      context: backend
+      dockerfile: workflows/backend.yml
+      context: workflows
 
     secrets:
       GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
