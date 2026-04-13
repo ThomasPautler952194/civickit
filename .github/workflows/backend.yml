@@ -27,7 +27,7 @@ jobs:
 
   docker-build:
     needs: test
-    # Local reference - this is the key for testing in same repo
+    # Local reference 
     uses: ./.github/workflows/docker-build-push.yml
 
     with:
