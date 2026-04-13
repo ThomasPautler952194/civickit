@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: civickit\backend
+        working-directory: backend
     steps:
       - uses: actions/checkout@v4
       - name: Use Node
@@ -32,8 +32,8 @@ jobs:
 
     with:
       image_name: civickit-backend
-      dockerfile: civickit/backend/Dockerfile
-      context: civickit/backend
+      dockerfile: backend/Dockerfile
+      context: backend
 
     secrets:
       GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
