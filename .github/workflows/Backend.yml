@@ -34,7 +34,7 @@ jobs:
 
   registry:
     needs: test
-    uses: org/repo/.github/workflows/Reusable_Docker.yml@branch
+    uses: oss-slu/oss_cicd_automation/Templates/Reusable_Docker.yml@116-cicd-template-registry---create-reusable-docker-build-workflow-template
     with:
       image_name: civickit-backend
       dockerfile: backend/Dockerfile
