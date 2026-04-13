@@ -32,7 +32,7 @@ jobs:
 
     with:
       image_name: civickit-backend
-      dockerfile: backend/Dockerfile
+      dockerfile: backend/dockerfile
       context: backend
 
     secrets:
